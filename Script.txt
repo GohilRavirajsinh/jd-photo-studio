@@ -1,0 +1,97 @@
+create a project for JD Photo Studio title and using tailwindcss, css3, javascript, node.js , react.js and this project is created by vite@latest and in react use hooks to optimised web, use react-router for file path like this const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<App />}>
+      <Route path="" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/user/:userid" element={<User />} />
+      <Route
+        loader={githubInfoLoader}
+        path="/github"
+        element={<Github />} />
+    </Route>
+  )
+)
+and use react-redux and redux-toolkit and create dynamic and morden site for client that i create first than ask client to take website and give them to fix meeting and than client look site and buy create like that type of site , like client see and tell yes i agree with this give me site like this , now i give you pags stucture and details that created by ai 1. Home Page (Hyper-Local + Premium)
+
+Must include:
+
+Tagline:
+👉 “JD Photo Studio – Premium Photography in Vallabh Vidyanagar”
+Hero video (wedding / cinematic reel)
+Quick services section
+“Serving Anand & Vidyanagar”
+CTA: Book Now (WhatsApp)
+2. Services Page (LOCAL + MODERN MIX)
+
+Based on competitors + demand:
+
+Core Services:
+Wedding Photography
+Pre-Wedding Shoots
+Event Coverage
+Portrait / Portfolio (students!)
+High-Demand Local Services:
+Passport Photos (fast delivery)
+College Portfolio Shoots
+Baby / Family Shoots
+Modern Add-ons (YOUR ADVANTAGE):
+AI Photo Editing
+Instagram Reels Editing
+Logo / Branding Shoots
+
+👉 Competitors DON’T highlight these → your edge
+
+3. Portfolio Page (Very Important)
+
+Split like:
+
+Weddings
+Pre-Wedding
+Portraits (students)
+Events
+Creative / AI edits
+
+👉 This is your main selling weapon
+
+4. Pricing Page (Win vs Competitors)
+
+Most local studios hide pricing.
+
+👉 You show:
+
+Basic (₹)
+Standard (₹₹)
+Premium (₹₹₹)
+
+👉 This builds trust instantly.
+
+5. About Page (Make It Personal)
+Your story (JD Photo Studio origin)
+Your tools (Premiere Pro, Photoshop, CapCut)
+Your vision (modern + creative)
+
+👉 People book YOU, not just studio
+
+6. Booking Page (VERY IMPORTANT)
+
+Include:
+
+Date selection
+Service selection
+WhatsApp button (must in India)
+Quick call button
+create using this but if you think any changes you can into this than you can by your self , if you can add any topics or details than you can. now create site by simple documantation and delete all unnecessary files and do code structure also easy to understand and debugging if client say me changes just drop one comment on starting section like here start file path like that to understand code and find details very easily now create 
+
+
+
+Advanced Installation
+npm install
+npm install tailwindcss @tailwindcss/vite
+npm install react-redux
+npm install @reduxjs/toolkit
+
+Extra Installation
+npm install react-router-dom
+npm install lucide-react 
+npm install framer-motion
