@@ -82,8 +82,10 @@ const Navbar = () => {
 
         {/* Mobile Toggle */}
         <button 
+          type="button"
+          aria-label="Toggle navigation menu"
           className="nav-mobile-toggle text-white z-50 p-2"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          onClick={() => setIsMobileMenuOpen((current) => !current)}
         >
           {isMobileMenuOpen ? <X size={32} /> : <Menu size={32} />}
         </button>
@@ -97,7 +99,7 @@ const Navbar = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="fixed inset-0 bg-rich-black z-40 flex flex-col items-center justify-center gap-8 md:hidden"
+            className="fixed inset-0 bg-rich-black z-40 flex flex-col items-center justify-center gap-8 p-6 md:hidden mobile-menu-drawer"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-50" />
             
@@ -107,8 +109,8 @@ const Navbar = () => {
                   to={link.path}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={({ isActive }) => `
-                    font-display text-xl md:text-3xl tracking-[0.2em] uppercase transition-all
-                    ${isActive ? 'text-primary' : 'text-white/70 hover:text-white'}
+                    font-display text-2xl sm:text-3xl tracking-[0.25em] uppercase transition-all
+                    ${isActive ? 'text-primary' : 'text-white/80 hover:text-white'}
                   `}
                 >
                   {link.name}

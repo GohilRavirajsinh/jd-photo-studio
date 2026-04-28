@@ -19,7 +19,13 @@
     --foreground: 0 0% 98%;
   }
 
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
   body {
+    margin: 0;
+    padding: 0;
     @apply bg-rich-black text-zinc-100 font-body antialiased;
     background-image:
       radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
@@ -137,6 +143,25 @@
   .nav-mobile-toggle {
     display: none;
   }
+}
+
+.mobile-menu-drawer {
+  min-height: 100vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.mobile-menu-drawer a {
+  display: inline-block;
+  width: 100%;
+  max-width: 360px;
+}
+
+.mobile-menu-drawer .premium-button-primary {
+  width: 100%;
+  max-width: 320px;
+  font-size: 1rem;
 }
 
 /* Grid Responsiveness */
