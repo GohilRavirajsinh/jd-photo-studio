@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen min-h-[700px] bg-rich-black flex flex-col justify-center pt-32 pb-20 overflow-hidden">
+      <section className="relative min-h-screen min-h-[700px] bg-rich-black flex flex-col justify-center pt-20 md:pt-32 pb-10 md:pb-20 overflow-hidden">
         {/* Background Image with Cinematic Overlay */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-rich-black/60 via-rich-black/20 to-rich-black z-10" />

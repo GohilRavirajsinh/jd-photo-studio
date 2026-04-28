@@ -107,7 +107,7 @@ const Navbar = () => {
                   to={link.path}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={({ isActive }) => `
-                    font-display text-3xl tracking-[0.2em] uppercase transition-all
+                    font-display text-xl md:text-3xl tracking-[0.2em] uppercase transition-all
                     ${isActive ? 'text-primary' : 'text-white/70 hover:text-white'}
                   `}
                 >
