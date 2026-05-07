@@ -1,4 +1,4 @@
-import React from 'react';
+// File: src/pages/User.jsx
 import { useParams } from 'react-router-dom';
 
 const User = () => {

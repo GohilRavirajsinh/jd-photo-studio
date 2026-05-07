@@ -1,4 +1,5 @@
-import React from 'react';
+// File: src/pages/Services.jsx
+import { cloneElement } from 'react';
 import { motion } from 'framer-motion';
 import { Camera, Sparkles, Video, Users, Image as ImageIcon, CreditCard, Palette } from 'lucide-react';
 import { Instagram } from '../components/SocialIcons';
@@ -41,7 +42,6 @@ const Services = () => {
 
   return (
     <div className="pt-32 pb-24">
-<<<<<<< HEAD
       <div className="max-w-7xl mx-auto mobile-px">
         <div className="text-center mb-16 sm:mb-20">
           <motion.h1 
@@ -52,62 +52,31 @@ const Services = () => {
             Our <span className="text-primary">Services</span>
           </motion.h1>
           <p className="text-zinc-400 text-base sm:text-lg max-w-2xl mx-auto">
-=======
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-20">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-7xl font-bold mb-6"
-          >
-            Our <span className="text-primary">Services</span>
-          </motion.h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
->>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
             Blending traditional excellence with modern technology. We offer a range of services tailored for the digital age.
           </p>
         </div>
 
-<<<<<<< HEAD
-
         {/* Core Services Grid */}
         <div className="responsive-grid responsive-grid-2 mb-20 sm:mb-32">
-=======
-        {/* Core Services Grid */}
-        <div className="responsive-grid responsive-grid-2 mb-32">
->>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
           {coreServices.map((service, index) => (
             <motion.div 
               key={index}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-<<<<<<< HEAD
               className="glass-card group rounded-3xl overflow-hidden flex flex-col lg:flex-row h-full"
             >
               <div className="lg:w-1/2 h-56 sm:h-64 lg:h-auto overflow-hidden">
-=======
-              className="glass-card group rounded-3xl overflow-hidden flex flex-col md:flex-row h-full"
-            >
-              <div className="md:w-1/2 h-64 md:h-auto overflow-hidden">
->>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
                 <img 
                   src={service.image} 
                   alt={service.title} 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               </div>
-<<<<<<< HEAD
               <div className="lg:w-1/2 p-6 sm:p-8 flex flex-col justify-center">
                 <div className="mb-4">{service.icon}</div>
                 <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">{service.title}</h3>
                 <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed mb-6">{service.desc}</p>
-=======
-              <div className="md:w-1/2 p-8 flex flex-col justify-center">
-                <div className="mb-4">{service.icon}</div>
-                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed mb-6">{service.desc}</p>
->>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
                 <Link to="/booking" className="text-primary font-display text-sm font-semibold flex items-center gap-2 group-hover:translate-x-2 transition-transform">
                   Inquire Now →
                 </Link>
@@ -116,47 +85,25 @@ const Services = () => {
           ))}
         </div>
 
-<<<<<<< HEAD
-
         {/* Modern Add-ons */}
         <div className="bg-zinc-deep/50 rounded-[2.5rem] sm:rounded-[3rem] p-8 sm:p-12 md:p-20 border border-white/5">
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-10 sm:mb-16 text-center">Modern <span className="text-primary">Add-ons</span></h2>
           <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-=======
-        {/* Modern Add-ons */}
-        <div className="bg-zinc-deep/50 rounded-[3rem] p-12 md:p-20 border border-white/5">
-          <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center">Modern <span className="text-primary">Add-ons</span></h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
->>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
             {modernAddons.map((addon, index) => (
               <motion.div 
                 key={index}
                 whileHover={{ y: -10 }}
-<<<<<<< HEAD
                 className="p-6 sm:p-8 rounded-2xl bg-rich-black/50 border border-white/5 hover:border-primary/30 transition-all text-center"
               >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                  {React.cloneElement(addon.icon, { size: 24 })}
+                  {cloneElement(addon.icon, { size: 24 })}
                 </div>
                 <h4 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">{addon.title}</h4>
                 <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed">{addon.desc}</p>
-=======
-                className="p-8 rounded-2xl bg-rich-black/50 border border-white/5 hover:border-primary/30 transition-all text-center"
-              >
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  {addon.icon}
-                </div>
-                <h4 className="text-xl font-bold mb-3">{addon.title}</h4>
-                <p className="text-zinc-400 text-sm leading-relaxed">{addon.desc}</p>
->>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
               </motion.div>
             ))}
           </div>
         </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
       </div>
     </div>
   );

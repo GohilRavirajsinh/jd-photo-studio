@@ -1,4 +1,4 @@
-import React from 'react';
+// File: src/pages/Github.jsx
 import { useLoaderData } from 'react-router-dom';
 import { Users, BookOpen } from 'lucide-react';
 import { Github as GithubIcon } from '../components/SocialIcons';
