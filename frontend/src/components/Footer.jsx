@@ -5,15 +5,24 @@ import { Instagram, Facebook, Youtube } from './SocialIcons';
 
 const Footer = () => {
   return (
+<<<<<<< HEAD
     <footer className="bg-zinc-950 border-t border-white/5 section-py pb-10">
       <div className="max-w-7xl mx-auto mobile-px grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+=======
+    <footer className="bg-zinc-950 border-t border-white/5 pt-20 pb-10">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
         <div className="space-y-6">
           <Link to="/" className="flex items-center gap-2">
             <span className="font-display font-bold text-2xl tracking-tighter text-white">
               JD<span className="text-primary">STUDIO</span>
             </span>
           </Link>
+<<<<<<< HEAD
           <p className="text-zinc-400 text-sm leading-relaxed max-w-xs">
+=======
+          <p className="text-zinc-400 text-sm leading-relaxed">
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
             Premium photography services in Vallabh Vidyanagar. Capturing your most precious moments with a modern and creative touch.
           </p>
           <div className="flex gap-4">
@@ -75,13 +84,21 @@ const Footer = () => {
         </div>
       </div>
       
+<<<<<<< HEAD
       <div className="max-w-7xl mx-auto mobile-px mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-zinc-500 text-xs text-center md:text-left">
+=======
+      <div className="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-white/5 flex flex-col md:row justify-between items-center gap-4">
+        <p className="text-zinc-500 text-xs text-center">
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
           © {new Date().getFullYear()} JD Photo Studio. All rights reserved. Designed with ❤️ for Vidyanagar.
         </p>
       </div>
     </footer>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
   );
 };
 

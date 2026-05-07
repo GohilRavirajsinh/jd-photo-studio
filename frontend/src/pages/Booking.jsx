@@ -23,13 +23,19 @@ const Booking = () => {
 
   return (
     <div className="pt-32 pb-24 min-h-screen">
+<<<<<<< HEAD
       <div className="max-w-7xl mx-auto mobile-px">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+=======
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
           {/* Left Column: Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
           >
+<<<<<<< HEAD
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 sm:mb-8">Secure Your <span className="text-primary">Spot</span></h1>
             <p className="text-zinc-400 text-base sm:text-lg mb-8 sm:mb-12 leading-relaxed">
               Ready to create something beautiful? Fill out the form or reach out directly via WhatsApp or Call. Our team will get back to you within 24 hours.
@@ -54,21 +60,57 @@ const Booking = () => {
                 <div>
                   <div className="text-zinc-500 text-[10px] sm:text-xs uppercase tracking-widest mb-1">WhatsApp Message</div>
                   <div className="text-lg sm:text-xl font-bold text-white">Chat on WhatsApp</div>
+=======
+            <h1 className="text-5xl md:text-7xl font-bold mb-8">Secure Your <span className="text-primary">Spot</span></h1>
+            <p className="text-zinc-400 text-lg mb-12">
+              Ready to create something beautiful? Fill out the form or reach out directly via WhatsApp or Call. Our team will get back to you within 24 hours.
+            </p>
+
+            <div className="space-y-8">
+              <a href="tel:+919876543210" className="flex items-center gap-6 p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/30 transition-all group">
+                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary transition-colors">
+                  <Phone size={24} className="text-primary group-hover:text-rich-black" />
+                </div>
+                <div>
+                  <div className="text-zinc-500 text-xs uppercase tracking-widest mb-1">Call for Instant Booking</div>
+                  <div className="text-xl font-bold text-white">+91 98765 43210</div>
+                </div>
+              </a>
+
+              <a href="https://wa.me/919876543210" className="flex items-center gap-6 p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-green-500/30 transition-all group">
+                <div className="w-14 h-14 bg-green-500/10 rounded-xl flex items-center justify-center group-hover:bg-green-500 transition-colors">
+                  <MessageSquare size={24} className="text-green-500 group-hover:text-white" />
+                </div>
+                <div>
+                  <div className="text-zinc-500 text-xs uppercase tracking-widest mb-1">WhatsApp Message</div>
+                  <div className="text-xl font-bold text-white">Chat on WhatsApp</div>
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
                 </div>
               </a>
             </div>
           </motion.div>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
           {/* Right Column: Form */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
+<<<<<<< HEAD
             className="glass-card p-6 sm:p-10 rounded-[2rem] sm:rounded-[2.5rem] mt-12 lg:mt-0"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
                 <label className="text-[10px] sm:text-xs uppercase tracking-widest text-zinc-500 font-display font-semibold">Your Name</label>
+=======
+            className="glass-card p-10 rounded-[2.5rem]"
+          >
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="space-y-2">
+                <label className="text-xs uppercase tracking-widest text-zinc-500 font-display font-semibold">Your Name</label>
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
                 <div className="relative">
                   <User className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-600" size={18} />
                   <input 
@@ -78,14 +120,24 @@ const Booking = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     placeholder="Enter your full name" 
+<<<<<<< HEAD
                     className="w-full bg-rich-black border border-white/10 rounded-xl py-3 sm:py-4 pl-12 pr-4 text-sm sm:text-base text-white focus:outline-none focus:border-primary transition-colors"
+=======
+                    className="w-full bg-rich-black border border-white/10 rounded-xl py-4 pl-12 pr-4 text-white focus:outline-none focus:border-primary transition-colors"
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
                   />
                 </div>
               </div>
 
+<<<<<<< HEAD
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-[10px] sm:text-xs uppercase tracking-widest text-zinc-500 font-display font-semibold">Preferred Date</label>
+=======
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <label className="text-xs uppercase tracking-widest text-zinc-500 font-display font-semibold">Preferred Date</label>
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
                   <div className="relative">
                     <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-600" size={18} />
                     <input 
@@ -94,19 +146,31 @@ const Booking = () => {
                       required
                       value={formData.date}
                       onChange={handleInputChange}
+<<<<<<< HEAD
                       className="w-full bg-rich-black border border-white/10 rounded-xl py-3 sm:py-4 pl-12 pr-4 text-sm sm:text-base text-white focus:outline-none focus:border-primary transition-colors [color-scheme:dark]"
+=======
+                      className="w-full bg-rich-black border border-white/10 rounded-xl py-4 pl-12 pr-4 text-white focus:outline-none focus:border-primary transition-colors [color-scheme:dark]"
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
+<<<<<<< HEAD
                   <label className="text-[10px] sm:text-xs uppercase tracking-widest text-zinc-500 font-display font-semibold">Service</label>
+=======
+                  <label className="text-xs uppercase tracking-widest text-zinc-500 font-display font-semibold">Service</label>
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
                   <select 
                     name="service"
                     required
                     value={formData.service}
                     onChange={handleInputChange}
+<<<<<<< HEAD
                     className="w-full bg-rich-black border border-white/10 rounded-xl py-3 sm:py-4 px-4 text-sm sm:text-base text-white focus:outline-none focus:border-primary transition-colors appearance-none"
+=======
+                    className="w-full bg-rich-black border border-white/10 rounded-xl py-4 px-4 text-white focus:outline-none focus:border-primary transition-colors appearance-none"
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
                   >
                     <option value="">Select a service</option>
                     {services.map(s => <option key={s} value={s}>{s}</option>)}
@@ -115,27 +179,42 @@ const Booking = () => {
               </div>
 
               <div className="space-y-2">
+<<<<<<< HEAD
                 <label className="text-[10px] sm:text-xs uppercase tracking-widest text-zinc-500 font-display font-semibold">Message / Details</label>
+=======
+                <label className="text-xs uppercase tracking-widest text-zinc-500 font-display font-semibold">Message / Details</label>
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
                 <textarea 
                   name="message"
                   rows="4"
                   value={formData.message}
                   onChange={handleInputChange}
                   placeholder="Tell us about your shoot requirements..." 
+<<<<<<< HEAD
                   className="w-full bg-rich-black border border-white/10 rounded-xl p-4 text-sm sm:text-base text-white focus:outline-none focus:border-primary transition-colors resize-none"
+=======
+                  className="w-full bg-rich-black border border-white/10 rounded-xl p-4 text-white focus:outline-none focus:border-primary transition-colors resize-none"
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
                 ></textarea>
               </div>
 
               <button 
                 type="submit" 
+<<<<<<< HEAD
                 className="w-full premium-button-primary py-4 sm:py-5 text-base sm:text-lg flex items-center justify-center gap-3"
+=======
+                className="w-full premium-button-primary py-5 text-lg flex items-center justify-center gap-3"
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
               >
                 Request Booking
                 <Send size={20} />
               </button>
             </form>
           </motion.div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 564b3243acf62f481f1015f4696b9f36e4bd6bf8
         </div>
       </div>
     </div>
